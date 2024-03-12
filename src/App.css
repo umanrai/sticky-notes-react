@@ -69,6 +69,20 @@ body {
   padding: 10px;
 }
 
+.btn-note-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+  background-color: #a18a8a;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 24%;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   #app {
       grid-template-columns: repeat(auto-fill, 100%);

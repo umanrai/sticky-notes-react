@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../context/GlobalState';
 
-const Header = () => {
+const Header = ({ searchNotes }) => {
+
+
+  // const filterNoteList = (event) => searchNotes(event.target.value)
+
   return (
     <div className="search-bar">
-        <input className="search" placeholder="Search notes ..."/>
+        <input className="search" onKeyUp={(event) => searchNotes(event.target.value)} placeholder="Search notes ..."/>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const NewNote = () => {
     const handleClick = () => addNote({ id: Math.floor(Math.random() * 100000), text: '' })
 
     return (
-        <button onClick={handleClick} className="add-note">+</button>
+        <button title='Add A New Note' onClick={handleClick} className="add-note">+</button>
     )
 }
 
